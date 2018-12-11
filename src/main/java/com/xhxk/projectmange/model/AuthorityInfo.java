@@ -7,8 +7,8 @@ import javax.persistence.Table;
 
 @Data
 @Entity
-@Table(name = "role")
-public class Role extends BaseModel {
-    private String roleName;
-    private String roleDesc;
+@Table(name = "authority_info")
+public class AuthorityInfo extends BaseModel{
+    private Integer userId;
+    private Integer roleId;
 }

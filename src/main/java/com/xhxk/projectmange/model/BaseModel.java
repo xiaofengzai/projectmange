@@ -14,9 +14,9 @@ public class BaseModel {
     @Column
     private Integer id;
     @Column
-    private Integer creator=0;
+    private Integer creatorId=0;
     @Column
-    private Integer updater=0;
+    private Integer updaterId=0;
     @Column
     private Date createdTime=new Date();
     @Column

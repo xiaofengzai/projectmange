@@ -2,10 +2,14 @@ package com.xhxk.projectmange.model;
 
 import lombok.Data;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
 @Data
-public class Project {
-    private Integer id;
+@Entity
+@Table(name = "project")
+public class Project extends BaseModel{
     private String name;
-    private Integer owner;
+    private Integer ownerId;
     private String remark;
 }
